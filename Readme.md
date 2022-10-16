@@ -26,8 +26,11 @@ Incluindo Função Atualizar dados;
 Incluir Botão funcional;
 
 ```
-![Adicionado os botões Funcionais](image.png)
-
+![Exemplo dos botões Funcionais](templates/imagem.png)\
+<b>EXEMPLO BOTÃO FUNCIONAL
+\
+\
+\
 <b>PARA CADASTRAR NOVO PACIENTE, INSIRA "\novo", após o final do url no navegador!\
 PARA FAZER LOGIN NA PÁGINA, INSIRA : login: lagojorge  e a senha: senha123 ou login:Susu e a senha:321senha</b>
 
