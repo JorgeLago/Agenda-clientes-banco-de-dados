@@ -22,10 +22,10 @@ cursor.execute("CREATE DATABASE `agenda_cliente`;")
 
 cursor.execute("USE `agenda_cliente`;")
 
-# criando tabelas
+
 TABLES = {}
 TABLES['Pacientes'] = ('''
-      CREATE TABLE `paciente` (
+      CREATE TABLE `pacientes` (
       `id` int(11) NOT NULL AUTO_INCREMENT,
       `nome` varchar(50) NOT NULL,
       `especialidade` varchar(30) NOT NULL,
@@ -55,7 +55,6 @@ for tabela_nome in TABLES:
       else:
             print('OK')
 
-# inserindo usuarios
 usuario_sql = 'INSERT INTO usuarios (nome, nickname, senha) VALUES (%s, %s, %s)'
 usuarios = [
       ("Jorge Lago", "lagojorge", "senha123"),
@@ -69,7 +68,7 @@ print(' -------------  Usuários:  -------------')
 for user in cursor.fetchall():
     print(user[1])
 
-# inserindo jogos
+
 pacientes_sql = 'INSERT INTO pacientes (nome, especialidade, horario, telefone) VALUES (%s, %s, %s)'
 pacientes = [
       ('Roberta Silva', 'Dentista', '09:30', '9833044554'),
@@ -82,7 +81,6 @@ print(' -------------  Pacientes:  -------------')
 for pacientes in cursor.fetchall():
     print(pacientes[1])
 
-# commitando se não nada tem efeito
 conn.commit()
 
 cursor.close()
