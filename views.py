@@ -32,6 +32,37 @@ def criar():
    
     return redirect(url_for('index'))
 
+@app.route('/editar/<int:id>')
+def editar(id):
+    if 'usuario_logado' not in session or session['usuario_logado'] == None:
+        return redirect(url_for('login', proxima=url_for('editar', id=id)))
+    paciente = Pacientes.query.filter_by(id=id).first()
+    return render_template('editar.html', titulo='Editando Agendamento', paciente=paciente)
+
+@app.route('/atualizar', methods=['POST',])
+def atualizar():
+    paciente = Pacientes.query.filter_by(id=request.form['id']).first()
+    paciente.nome = request.form['nome']
+    paciente.especialidade = request.form['especialidade']
+    paciente.horario = request.form['horario']
+    paciente.telefone = request.form['telefone']
+
+    db.session.add(paciente)
+    db.session.commit()
+
+    return redirect(url_for('index'))
+
+@app.route('/deletar/<int:id>')
+def deletar(id):
+    if 'usuario_logado' not in session or session['usuario_logado'] == None:
+        return redirect(url_for('login'))
+
+    Pacientes.query.filter_by(id=id).delete()
+    db.session.commit()
+    flash('Agendamento deletado com sucesso!')
+
+    return redirect(url_for('index'))
+
 @app.route('/login')
 def login():
     proxima = request.args.get('proxima')
