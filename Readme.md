@@ -25,8 +25,9 @@ Incluir Função Delete;
 Incluindo Função Atualizar dados;
 Incluir Botão funcional;
 
-
->> PARA CADASTRAR NOVO PACIENTE, INSIRA \novo, após o final do url no navegador!
-PARA FAZER LOGIN NA PÁGINA, INSIRA : login: lagojorge  e a senha: senha123 ou login:Susu e a senha:321senha<<
-
 ```
+![Adicionado os botões Funcionais](image.png)
+
+<b>PARA CADASTRAR NOVO PACIENTE, INSIRA "\novo", após o final do url no navegador!\
+PARA FAZER LOGIN NA PÁGINA, INSIRA : login: lagojorge  e a senha: senha123 ou login:Susu e a senha:321senha</b>
+
