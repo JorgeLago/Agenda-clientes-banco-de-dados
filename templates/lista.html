@@ -7,6 +7,7 @@
                 <th>Especialidade</th>
                 <th>Horario</th>
                 <th>Telefone</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -16,6 +17,10 @@
                             <td>{{ paciente.especialidade }}</td>
                             <td>{{ paciente.horario }}</td>
                             <td>{{ paciente.telefone }}</td>
+                            <td>
+                                <a href="{{ url_for('editar', id=paciente.id) }}">Editar</a>
+                                <a href="{{ url_for('deletar', id=paciente.id) }}">Deletar</a>
+                            </td>
                         </tr>
         {% endfor %}
         </tbody>
