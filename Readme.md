@@ -24,6 +24,7 @@ Concluir;
 Incluir Banco de Dados;
 Corrigir Bug da conexão do servidor;
 Incluir Função Delete;
+Incluindo Função Atualizar dados;
 
 
 >> PARA CADASTRAR NOVO PACIENTE, INSIRA \novo, após o final do url no navegador!
