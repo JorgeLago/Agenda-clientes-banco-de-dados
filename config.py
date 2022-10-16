@@ -5,6 +5,6 @@ SQLALCHEMY_DATABASE_URI = \
         SGBD = 'mysql+mysqlconnector',
         usuario = 'root',
         senha = 'admin',
-        servidor = 'localhost',
+        servidor = '127.0.0.1',
         database = 'agenda_cliente'
     )
