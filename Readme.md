@@ -2,12 +2,13 @@
 
 Reaproveitando o projeto passado, me desafiei a incluir um banco de dados, para que se pudesse utilizar as informações sem perder quando reinicia a aplicação.
 
+```
 -HTML \
 -PYTHON\
 -FLASK\
 -GITHUB\
 -MYSQL
-
+```
 
 ```
 Criar arquivos html base;
