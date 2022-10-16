@@ -1,0 +1,23 @@
+{% extends "principal.html"%}
+{% block conteudo %}
+    <table class="table table-striped table-responsive table-bordered">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Especialidade</th>
+                <th>Horario</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for paciente in paciente %}
+                        <tr>
+                            <td>{{ paciente.nome }}</td>
+                            <td>{{ paciente.especialidade }}</td>
+                            <td>{{ paciente.horario }}</td>
+                            <td>{{ paciente.telefone }}</td>
+                        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
