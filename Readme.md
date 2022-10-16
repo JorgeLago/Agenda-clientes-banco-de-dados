@@ -11,12 +11,9 @@ Reaproveitando o projeto passado, me desafiei a incluir um banco de dados, para 
 
 ```
 Criar arquivos html base;
-Criar o arquivo Python base;
-Criar segundo arquivo html para os formulários;
-Adicionar a rota nova pro formulário;
+Reaproveitando Codigo do projeto anterior;
 Adicionar nova categoria;
 Criar o Formulário interativo para o usuário;
-Excluir Repetição de código;
 Mudar Objetivo do projeto;
 Incluir Login e senha;
 Incluir Verificação de Login;
