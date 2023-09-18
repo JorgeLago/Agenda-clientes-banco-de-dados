@@ -23,7 +23,6 @@ Incluir Banco de Dados;
 Corrigir Bug da conexão do servidor;
 Incluir Função Delete;
 Incluindo Função Atualizar dados;
-Incluir Botão funcional;
 
 ```
 ![Exemplo dos botões Funcionais](templates/imagem.png)\
