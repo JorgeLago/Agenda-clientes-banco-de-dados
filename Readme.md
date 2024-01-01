@@ -7,7 +7,6 @@ Reaproveitando o projeto passado, me desafiei a incluir um banco de dados, para 
 -PYTHON\
 -FLASK\
 -GITHUB\
--MYSQL
 ```
 
 ```
